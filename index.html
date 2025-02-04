@@ -3,77 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soundarrajan | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
-    <!-- Navbar -->
-    <header>
-        <h1>Soundarrajan</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#home" class="logo">YourName</a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-content">
-            <h2>Hi, I'm Soundarrajan</h2>
-            <p>A Passionate Software Engineer & Developer</p>
-            <a href="#projects" class="btn">View My Work</a>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+                <h2>Web Developer & Designer</h2>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a software engineer specializing in full-stack development, cloud computing , and AI.</p>
-        <div class="skills">
-            <h3>Skills</h3>
-            <ul>
-                <li>C, C++, Java, JavaScript</li>
-                <li>HTML, CSS, React</li>
-                <li>SQL, MySQL</li>
-                <li>Git, Linux, Networking</li>
-            </ul>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <img src="images/profile.jpg" alt="Your Name" class="profile-img">
+                <div class="bio">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <div class="skills">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-items">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                    <a href="assets/resumes/resume.pdf" class="btn" download>Download Resume</a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Data-Driven Gym Management System</h3>
-            <p>Built a system to automate gym operations using PHP, MySQL, and Google Charts API.</p>
-        </div>
-        <div class="project">
-            <h3>Optimized Crop Recommendation System</h3>
-            <p>Used ML techniques with 95% accuracy for better crop yield recommendations.</p>
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project Cards -->
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Project Title 1</h3>
+                        <p>Project description goes here. Briefly explain what the project does and its key features.</p>
+                        <div class="project-links">
+                            <a href="#"><i class="fab fa-github"></i> Code</a>
+                            <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat project cards as needed -->
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Soundarrajan | <a href="https://linkedin.com/in/soundarrajan-r">LinkedIn</a></p>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
     </footer>
 
+    <script src="scripts/main.js"></script>
 </body>
 </html>
